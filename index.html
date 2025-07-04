@@ -73,7 +73,7 @@
       background-color: #a3d9a5 !important;
     }
 
-    /* --- STYLES FOR BOLD DIVIDERS & LOGOS --- */
+    /* --- STYLES FOR BOLD DIVIDERS --- */
     .bold-v-divider {
       border-right: 2px solid #343a40 !important;
     }
@@ -83,15 +83,6 @@
     }
     .cmidrule {
       border-bottom: 2px solid #343a40 !important;
-    }
-    .logo-row th {
-      border-top: 2px solid #343a40 !important;
-      border-bottom: 2px solid #343a40 !important;
-    }
-    .model-logo {
-      height: 28px;
-      width: auto;
-      object-fit: contain;
     }
     /* --- END CUSTOM STYLES --- */
 
@@ -117,23 +108,7 @@
 </head>
 <body>
 
-<nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a class="navbar-item" href="#">
-      <img src="./static/images/cropped_Logo.png" alt="PlanQA" style="max-height: 3rem;" />
-    </a>
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-  <div class="navbar-menu">
-    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-    </div>
 
-  </div>
-</nav>
 
 
 <section class="hero">
@@ -254,7 +229,7 @@
 
 <section class="section">
   <div class="container-fluid table-container">
-    <h2 class="subtitle is-3 mb-3">Model Performance Analysis</h2>
+    <h2 class="subtitle is-3 mb-3 has-text-centered">Model Performance Analysis</h2>
     <div class="table-responsive">
       <table style="margin-left:auto;margin-right:auto;" class="table table-bordered table-hover">
         <caption>
@@ -288,21 +263,6 @@
             <th scope="col">0.3</th><th scope="col">0.0</th><th scope="col">0.5</th><th scope="col">0.0</th>
             <th scope="col" class="bold-v-divider">1.0</th>
             <th scope="col">0.6</th><th scope="col">0.5</th><th scope="col">0.7</th><th scope="col">1.0</th>
-          </tr>
-          <tr class="logo-row">
-            <th scope="col">Type</th>
-            <th scope="col" class="bold-v-divider">Category</th>
-            <th scope="col"><img src="./static/images/qwen-color.png" alt="Qwen Logo" class="model-logo"></th>
-            <th scope="col" class="bold-v-divider"><img src="./static/images/gemini-brand-color.png" alt="DeepSeek Logo" class="model-logo"></th>
-            <th scope="col"><img src="./static/images/gemini-brand-color.png" alt="DeepSeek Logo" class="model-logo"></th>
-            <th scope="col"><img src="./static/images/meta-color.png" alt="Meta Logo" class="model-logo"></th>
-            <th scope="col"><img src="./static/images/gemma%20(1).png" alt="Gemma Logo" class="model-logo"></th>
-            <th scope="col"><img src="./static/images/microsoft-color.png" alt="Microsoft Logo" class="model-logo"></th>
-            <th scope="col" class="bold-v-divider"><img src="./static/images/openai%20(1).png" alt="OpenAI Logo" class="model-logo"></th>
-            <th scope="col"><img src="./static/images/meta-color.png" alt="Meta Logo" class="model-logo"></th>
-            <th scope="col"><img src="./static/images/gemma%20(1).png" alt="Gemma Logo" class="model-logo"></th>
-            <th scope="col"><img src="./static/images/microsoft-color.png" alt="Microsoft Logo" class="model-logo"></th>
-            <th scope="col"><img src="./static/images/openai%20(1).png" alt="OpenAI Logo" class="model-logo"></th>
           </tr>
         </thead>
         <tbody>
