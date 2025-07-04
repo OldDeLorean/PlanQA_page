@@ -38,13 +38,59 @@
   <script src="./static/js/bulma-carousel.min.js"></script>
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
+  <style>
+    body {
+        background-color: #f8f9fa;
+    }
+    .table-container {
+        padding: 2rem;
+    }
+    .table {
+        border: 2px solid #343a40;
+    }
+    .table thead th {
+        vertical-align: middle;
+        text-align: center;
+        background-color: #e9ecef;
+        border-color: #dee2e6;
+    }
+    .table tbody td,
+    .table tbody th {
+        vertical-align: middle;
+        text-align: center;
+    }
+    .table tbody th {
+        text-align: left;
+        font-weight: normal;
+    }
+    .category-group-header {
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+    .highlight-15 { background-color: #d4edda !important; }
+    .highlight-30 { background-color: #a3d9a5 !important; }
+    .bold-v-divider { border-right: 2px solid #343a40 !important; }
+    .block-start > td, .block-start > th { border-top: 2px solid #343a40 !important; }
+    .cmidrule { border-bottom: 2px solid #343a40 !important; }
+    .logo-row th { border-top: 2px solid #343a40 !important; border-bottom: 2px solid #343a40 !important; }
+    .model-logo { height: 28px; width: auto; object-fit: contain; }
+    .table-slide { overflow-x: auto; }
+    .table-slide table { width: max-content; }
+    caption {
+        caption-side: top;
+        padding: 1rem 0;
+        color: #6c757d;
+        text-align: left;
+    }
+    sup { line-height: 0; }
+  </style>
 </head>
 <body>
 
 <nav class="navbar" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
     <a class="navbar-item" href="#">
-      <img src="./static/images/cropped_Logo.png" alt="PlanQA" style="max-height: 3rem;" />
+      <img src="./static/images/PlanQA_Logo.svg" alt="PlanQA" style="max-height: 3rem;" />
     </a>
     <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
       <span aria-hidden="true"></span>
@@ -145,7 +191,7 @@
 <section class="section">
   <div class="container-fluid table-container">
     <h2 class="mb-3">Model Performance Analysis</h2>
-    <div class="table-responsive">
+    <div class="table-responsive table-slide">
       <table class="table table-bordered table-hover">
         <caption>
           <strong>Question-level accuracy by category for each model across room types.</strong>
